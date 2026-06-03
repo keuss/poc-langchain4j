@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cgi</groupId>
-    <artifactId>langchain4j-gemini-demo</artifactId>
+    <artifactId>langchain4j-open-ai-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -29,7 +29,7 @@
         <!-- Dépendance spécifique pour l'API Google AI (Gemini avec clé API standard) -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-google-ai-gemini</artifactId>
+            <artifactId>langchain4j-open-ai</artifactId>
             <version>${langchain4j.version}</version>
         </dependency>
 
