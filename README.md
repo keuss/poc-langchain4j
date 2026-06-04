@@ -29,6 +29,35 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lates
       }
     ]
   }'
+
+curl https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=xxxxx \
+ -H "Content-Type: application/json" \
+ -d '{
+ "contents": [
+   {
+ 	"parts": [
+ 	  {
+ 		"text": "Dis-moi si tu reçois ce message."
+ 	  }
+ 	]
+   }
+ ]
+ }'
+
+Compatible avec le standard OpenAI :
+
+curl https://generativelanguage.googleapis.com/v1beta/openai/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer xxxxx" \
+  -d '{
+    "model": "gemini-flash-latest",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Explain how AI works in a few words"
+      }
+    ]
+  }'
 ```
 
 
